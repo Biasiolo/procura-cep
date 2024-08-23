@@ -7,7 +7,7 @@ const Container = styled.div`
   border: 1px solid #ccc;
   border-radius: 8px;
   background-color: #f9f9f9;
-  width: 50%; /* Largura relativa ao pai */
+  width: 100%; /* Largura relativa ao pai */
   max-width: 1200px; /* Largura máxima para evitar que o container fique muito largo */
   box-sizing: border-box; /* Inclui padding e border na largura total */
   display: flex; /* Para centralizar itens se necessário */

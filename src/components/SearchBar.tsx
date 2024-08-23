@@ -84,6 +84,7 @@ const SearchBar: React.FC = () => {
 
   return (
     <Form onSubmit={handleSubmit(onSubmit)}>
+      <h3>Buscar Por CEP</h3>
       <Input
         mask="99999-999"
         maskChar={null}

@@ -63,6 +63,14 @@ const CloseButton = styled.button`
   cursor: pointer;
 `
 
+// Estilizando o container da seção de frete
+const SectionContainer = styled.div`
+  padding: 20px; /* Espaçamento na seção */
+  background: #f8f9fa; /* Cor de fundo clara para a seção */
+  border-radius: 8px;
+  text-align: center;
+`
+
 const FreightCalculator: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
 
@@ -70,7 +78,8 @@ const FreightCalculator: React.FC = () => {
   const closeModal = () => setIsModalOpen(false)
 
   return (
-    <div>
+    <SectionContainer>
+      <h3>Calculadora Frete</h3>
       <Button onClick={openModal}>Calcular Frete</Button>
 
       <ModalBackground isOpen={isModalOpen}>
@@ -82,7 +91,7 @@ const FreightCalculator: React.FC = () => {
           />
         </ModalContainer>
       </ModalBackground>
-    </div>
+    </SectionContainer>
   )
 }
 
